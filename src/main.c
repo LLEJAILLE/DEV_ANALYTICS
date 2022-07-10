@@ -50,6 +50,12 @@ int main(int argc, char **argv)
     //initialize values outside the structure
 
         float price = atof(argv[3]);
+        if (price > 9999 && index->language == 2) {
+            printf("You're price is too big\n");
+        }
+        if (price > 9999 && index->language == 1) {
+            printf("Votre prix est trop grand\n");
+        }
         float total = 0.0;
         int i = 0;
         int tmp = 0;
@@ -67,6 +73,14 @@ int main(int argc, char **argv)
                     }
                 } else
                     index->taux = atof(argv[i + 1]);
+                    if (index->taux > 200 && index->language == 2) {
+                        printf("You're rate is too long\n");
+                        exit (84);
+                    }
+                    if (index->taux > 200 && index->language == 1) {
+                        printf("votre taux est trop grand\n");
+                        exit (84);
+                    }
             }
         }
 
@@ -176,13 +190,13 @@ int main(int argc, char **argv)
         if (index->language == 1) {
             printf("Le produit à été ajouté !!\n");
             printf("Vue de la liste :\n\n");
-            printf("[nom]                     [achat]        [vente]     [taux]\n");
+            printf("[nom]                     [achat]       [vente]     [taux]\n");
             printf("%s\n\n", index->final);
         }
         if (index->language == 2) {
             printf("Article has been added!!\n");
             printf("View of the list :\n\n");
-            printf("[name]                 [purchase]   [sale]   [rate]\n");
+            printf("[name]                [purchase]   [sale]   [rate]\n");
             printf("%s\n\n", index->final);
         }
 

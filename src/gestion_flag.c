@@ -22,10 +22,12 @@ void usage_flag_view_list(index_t *index)
         }
     }
     if (index->language == 1) {
-        printf("Vue de la liste d'article:\n");
+        printf("Vue de la liste d'article:\n\n");
+        printf("[nom]                     [achat]       [vente]     [taux]");
     }
     if (index->language == 2) {
-        printf("View of list article:\n");
+        printf("View of list article:\n\n");
+        printf("[name]                [purchase]   [sale]   [rate]\n");
     }
     printf("%s\n\n", index->tab_article);
     exit(0);
