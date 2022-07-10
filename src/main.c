@@ -52,9 +52,11 @@ int main(int argc, char **argv)
         float price = atof(argv[3]);
         if (price > 9999 && index->language == 2) {
             printf("You're price is too big\n");
+            exit (84);
         }
         if (price > 9999 && index->language == 1) {
             printf("Votre prix est trop grand\n");
+            exit (84);
         }
         float total = 0.0;
         int i = 0;
