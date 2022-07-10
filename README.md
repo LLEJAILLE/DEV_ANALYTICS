@@ -1,2 +1,12 @@
 # DEV_ANALYTICS
-This is a little program to create list of articles with a production price. The program will print the name, the price enter in standard input, the price to sell and the % of benefice
+USAGE
+      ./dev_analytics [-clear]
+      ./dev_analytics [-language] [FR] or [AN]
+      ./dev_analytics [-add] [name_of_article] [price of production] (% == 20 default)
+      ./dev_analytics [-add] [name_of_article] [price of production] [-t] [number]
+
+DESCRIPTION
+      -t          changer le taux de rendement [20% par defaut]
+      -add        ajouter un article et son prix
+      -clear      ajouter un article et son prix
+      -language   changer de langue (français ou anglais)
