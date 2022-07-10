@@ -11,6 +11,7 @@ USAGE
       
 
 DESCRIPTION
+
       -t          changer le taux de rendement [20% par defaut]
       
       -add        ajouter un article et son prix
