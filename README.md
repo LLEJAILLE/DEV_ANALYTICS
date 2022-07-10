@@ -1,10 +1,5 @@
 # DEV_ANALYTICS
-
-THIS IS A PROGRAM TO CREATE A LIST OF ARTICLE WITH THEIR RATE THE START PRICE
-
 USAGE
-
-      ./dev_analytics [-h]
 
       ./dev_analytics [-clear]
       

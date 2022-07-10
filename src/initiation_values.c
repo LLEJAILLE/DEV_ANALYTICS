@@ -13,5 +13,6 @@ void initialize(index_t *index)
     index->floatmp = malloc(sizeof(char) * 100);
     index->strtaux = malloc(sizeof(char) * 100);
     index->pricestr = malloc(sizeof(char) * 100);
+    index->strtmp = malloc(sizeof(char) * 100);
     index->taux = 20;
 }
